@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content:center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5%;
+    z-index: 5;
+    margin: 0; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: 0; 
+    padding-left: 15%;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background: linear-gradient(to right, pink, rgb(226, 190, 28));
+    z-index: 10; 
+}
+
+.pink-block {
+    width: 25%;
+    background-color:rgba(255,182,193,0.5);
+    color: white;
+    margin-top: 20%;
+    padding: 25px;
+    margin-left: 10%;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 24px;
+    z-index: 20;
+}
+
+.dial-icon {
+    position: absolute;
+    top: 10px;
+    right: 55px;
+    width: 20px;
+    height: 24px;
+    z-index: 20;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding-top: 1px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 1px 0;
+    }
+
+    .pink-block {
+        width: 75%;
+        background-color:rgba(255,182,193,0.5);
+        color: white;
+        margin-top: 80%;
+        padding: 5px;
+        margin-left: 5%;
+    }
+
+}
